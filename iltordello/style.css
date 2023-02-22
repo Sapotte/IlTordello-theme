@@ -1,0 +1,607 @@
+/* 
+Theme name: Il Tordello
+Author: Sarah Schneider
+Description: Thème pour food truck Lisa Andreazzoli
+Version: 1.0
+ */
+
+
+#wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+    font-variant: small-caps;
+    text-align: center;
+ }
+
+
+ a {
+    text-decoration: none;
+ }
+
+ .wp-element-button {
+    font-size: 1.5em;
+    padding: 1em;
+ }
+
+
+ header {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+ }
+
+ #logo {
+    width: 15%;
+ }
+
+.site-title {
+    max-width: 100%;
+    font-family: "Italianno", cursive;
+    font-size: 5.5em;
+    overflow-wrap: anywhere;
+ } 
+ 
+
+ header a {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 50%;
+ }
+
+
+    /* menu */ 
+nav#menuPrincipal {
+    margin: 0 auto;
+}
+
+@keyframes menu_on {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(45deg); }
+}
+
+@-webkit-keyframes menu_on {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(45deg); }
+}
+#menuPrincipal #burger #icone.active {
+    animation: menu_on 1s linear;
+    -webkit-animation: menu_on 1s linear both;
+}
+
+#menuPrincipal #burger {
+    display: block;
+    align-self: start;
+    width: 10%;
+    height: auto;
+}
+
+#menuPrincipal .menu{
+    display: none;
+}
+
+#menuPrincipal #burger #icone {
+    width: 80px;
+    height: auto;
+}
+    
+nav#menuPrincipal ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+    list-style-type: none; 
+    padding: 1em;
+}
+ 
+nav#menuPrincipal ul li {
+    display:block;
+    margin-bottom: .5em; 
+    position:relative;
+    flex-wrap: wrap;
+}
+ 
+nav#menuPrincipal ul li a {
+    display:block;
+    font-size: 1.3em;
+    font-weight: 1000;
+    text-decoration:none;
+    text-shadow: 1px 1px 2px rgba(97, 158, 69, 0.386);
+    color: #56676b; 
+    padding: 0.5em 1.5em; 
+    text-align: center;
+}
+
+nav#menuPrincipal ul li a:hover {
+    cursor: pointer;
+    color: #26411e;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+/* sous-menus */ 
+nav#menuPrincipal ul li ul li {
+    display:block; 
+    width:100%; 
+    text-align:center; 
+    border-top:1px solid transparent; 
+    padding:0;
+}
+
+nav#menuPrincipal ul li ul li a {
+    padding: 0.5em 0; 
+} 
+
+nav#menuPrincipal ul li ul {
+    width: 100%; 
+    position:absolute; 
+    left:0; 
+    z-index: 1000; 
+    display:none;
+}
+    
+nav#menuPrincipal ul li:hover > ul {
+    display: block; 
+}
+
+/* Slider */
+.bx-wrapper {
+    display: none;
+}
+
+/* contenu principal */ 
+main {
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+.haut {
+    padding:0.5em; 
+    min-height:200px; 
+    margin-bottom: 1em; 
+    width: 100%;
+}
+   
+.infos{
+    font-style:italic;
+}
+
+ #pages h2, #pages h3 {
+    font-size: 4em;
+    font-weight: 600;
+ }
+
+ #pages div{
+    max-width: 1300px;
+    margin: 0 auto;
+ }
+
+
+ #pages p {
+    text-align: center;
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
+    max-width: 1300px;
+    margin: 0 auto;
+ }
+
+ #pages p::first-letter {
+    font-size: 2em;
+    font-weight: 900;
+ }
+
+.special {
+    padding: 10px;
+    border: 4px solid #26411e;
+    border-radius: 30px;
+}
+
+.special a {
+    margin: 2em auto;
+    padding: 1em 1.5em;
+    border: 4px solid #9c4921;
+    font: italic small-caps 2em "Montserrat", sans-serif;
+}
+
+.special .wp-element-button {
+    border: none;
+}
+
+/* Page blog */
+.avecAside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.avecAside .unArticle {
+    width: 80%;
+    border-radius: 40px;
+}
+
+.unArticle {
+    max-width: 1000px;
+    margin: 3em auto;
+    padding: 50px;
+    background-color: #f18e2b35;
+}
+
+.article_extrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article_extrait img {
+    margin: 0 auto;
+    max-width: max-content;
+    height: auto;
+    max-height: 1000px;
+    align-self: center;
+
+}
+
+
+/* accueil / fiertés */
+
+div.trio{
+    display: flex;
+    margin: 1em auto;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.trio_element {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/* Formulaires */
+    .wpcf7-form {
+        width: 100%;
+        max-width: 1400px;
+        margin: 4em auto;
+        padding: 1em;
+        border: 3px solid #955149;
+        background-color: #56676b18;
+    }
+
+    .wpcf7-form h1 {
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    .wpcf7-form p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1em;
+    }
+
+    .wpcf7-form label {
+        text-align: left;
+        margin-right: 15%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        color: #9c4921;
+
+    }
+
+    .wpcf7-form .form-group {
+        margin: 1em auto;
+    }
+
+    .wpcf7-form p span  {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form-input, .form-textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+
+    .form-date, .form-number {
+        padding: 10px;
+        justify-self: left;
+    }
+
+    .wpcf7-form p .form-send {
+        margin: 1em 40% 2em 40%;
+        width: 40%;
+        border-radius: 50px 0 50px 0;
+        padding: 1em;
+        background-color: #9c4921;
+        font :  bold 1em "Montserrat",sans-serif;
+        color: whitesmoke;
+    }
+
+    .form-radio {
+        display: flex;
+        flex-direction: wrap;
+        justify-content: flex-start;
+    }
+
+
+
+
+/* widgets */ 
+
+
+#colonneDroite, #colonneGauche{
+    width: 20%;
+    height: max-content;
+    padding:1em; 
+    margin : 2em 0.5em;
+}
+    
+#colonneDroite div{
+    margin-bottom:3em;
+} 
+
+#colonneDroite ul{
+    list-style-type: none; 
+} 
+
+
+#bas{
+    padding:0.5em; 
+    margin-bottom: 1em; 
+    display: flex;
+}
+
+.widget-bas{
+    margin-left:2em; 
+    min-width: 200px;
+}
+    
+#colonneDroite div{
+    margin-bottom:3em;
+} 
+
+#colonneDroite ul{
+    list-style-type: none; 
+} 
+
+/* Articles */
+#articleSeul{
+    text-align: left;
+    margin-top: 2em;
+}
+
+#articleSeul p {
+    max-width: 1000px;
+}
+
+#respond {
+   max-width: 700px;
+   margin: 1em auto;
+   border: 2px solid black;
+   text-align: left;
+   padding: 1em 10em;
+}
+
+.post-categories {
+    padding: 0;
+    margin-left: 25%;
+}
+
+#commentform p{
+    margin : 2em auto 2em 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#commentform p input, #commentform p textarea {
+    width: 70%;
+    padding: 0.5em;
+   border: 1px solid grey;
+   background-color: #f9f7f7;
+}
+
+#commentform p label:not(label[for="wp-comment-cookies-consent"]) {
+    width: 30%;
+}
+
+.article::first-letter, .article p::first-letter {
+    font-size: 1em;
+}
+.wp-block-post-featured-image img {
+    width: 60%;
+    height: auto;
+    max-height: 900px;
+    margin: 1em 20%;
+}
+
+
+
+/* Footer */
+    footer {
+        text-align:center; 
+        padding:0.5em;
+        margin: 3em auto 0 auto;
+        border-radius: 7px;
+        background-color: #9c4a21b7;
+        color: #ccc;
+    }
+
+    footer h3, footer span, footer a, footer i {
+        color: white;
+    }
+
+        /* menu footer */ 
+        footer ul{
+            list-style-type: none; 
+            margin-bottom: 0.5em;
+        }
+            
+        footer ul li{
+            display:inline-block;
+        } 
+
+        footer ul li:not(:first-of-type) {
+            margin-left:0.5em;
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            color: #955149;
+            margin: 1em 1em;
+        }
+
+        #contact i {
+            margin: 0.5em 0.5em;
+            padding: 1em;
+        }
+
+
+        #reseaux {
+            text-align: right;
+            margin: 0.5 1;
+            color: #955149;
+        }
+
+        #reseaux i {
+            margin: 0.5em 0.5em;
+            font-size: 4em;
+        }
+
+        #infos {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            font-size: 1em;
+        }
+
+
+
+#_customize-input-slide1{
+    width: 100%;
+    height: 10em;
+    height: auto;
+    border-style: dashed;
+}
+
+
+    
+@media screen and (min-width: 768px) {
+    
+
+    header {
+        flex-direction: row;
+    }
+
+    #titre {
+        width: 70%;
+        text-decoration: none;
+        margin-bottom: 4em;
+    }
+    
+    .site-title {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 10em;
+        letter-spacing: 0.2em;
+     }
+    
+     .site-description {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 3em;
+        letter-spacing: 0.2em;
+     }
+
+     #pages p {
+        text-align: left;
+        font-size: 1.3em;
+     }
+    
+  
+    #colonneDroite { 
+        width: 20%; 
+        padding: 2%;
+        margin: 4em 2em;
+    } 
+    
+    #recherche { 
+        display: block; 
+    } 
+
+    nav#menuPrincipal {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    nav#menuPrincipal ul li { 
+        display: inline-block;
+        margin: 0 1.5em;
+        font-size: 1.2em;
+    }
+
+    #menuPrincipal #burger {
+        display: none;
+    }
+    
+    #menuPrincipal .menu{
+        display: block;
+        width: 100%;
+    }
+
+    #metaslider-id-90 {
+        width: 100%;
+    }
+    
+    .bx-wrapper {
+        display: block;
+        border-radius: 50px;
+        max-height: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .bx-wrapper img {
+        margin: 0 auto;
+        border-radius: 50px;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    a.slide_span {
+        position: absolute;
+        right: 50px;
+        top: 60%;
+        z-index: 9000;
+        font: italic small-caps 5em 'Montserrat', sans-serif;
+        color: rgb(248, 249, 246); 
+        text-shadow: black 1px 0 10px;
+        letter-spacing: 0.2em;
+    }
+
+    #map {
+        height: 40rem;
+    }
+}

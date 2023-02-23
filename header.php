@@ -86,35 +86,39 @@
                 
                     <div class="bxslider">
                         <div>
+                        <img src="<?php echo $slide1_url ?>" class="slide_img">
                             <?php if($slide1_text!=''): ?>
-                            <a class="slide_span" href="<?php echo $slide1_link ?>"><?php echo $slide1_text ?></a>
-                            <?php endif; ?>
-                            <img src="<?php echo $slide1_url ?>" class="slide_img">
+                                <a class="slide_span" href="<?php echo $slide1_link ?>"><?php echo $slide1_text ?></a>
+                            <?php endif; ?>  
                         </div>
                         <?php if($slide2!='') :?>
                         <div>
                             <?php if($slide2_text!=''): ?>
                             <a class="slide_span" href="<?php echo $slide2_link ?>"><?php echo $slide2_text ?></a>
                             <?php endif; ?>
-                            <img src="<?php echo $slide2_url ?>" class="slide_img"></div>
+                            <img src="<?php echo $slide2_url ?>" class="slide_img">
+                        </div>
                         <?php if($slide3!='') :?>
                         <div>
+                            <img src="<?php echo $slide3_url ?>" class="slide_img">
                             <?php if($slide3_text!=''): ?>
                             <a class="slide_span" href="<?php echo $slide3_link ?>"><?php echo $slide3_text ?></a>
                             <?php endif; ?>
-                            <img src="<?php echo $slide3_url ?>" class="slide_img"></div>
+                        </div>
                         <?php if($slide4!='') :?>
                         <div>
+                            <img src="<?php echo $slide4_url ?>" class="slide_img">
                             <?php if($slide4_text!=''): ?>
                             <a class="slide_span" href="<?php echo $slide4_link ?>"><?php echo $slide4_text ?></a>
-                            <?php endif; ?>
-                            <img src="<?php echo $slide4_url ?>" class="slide_img"></div>
+                            <?php endif; ?> 
+                        </div>                           
                         <?php if($slide5!='') :?>
                         <div>
+                            <img src="<?php echo $slide5_url ?>" class="slide_img">
                             <?php if($slide5_text!=''): ?>
-                            <a class="slide_span" href="<?php echo $slide5_link ?>"><?php echo $slide5_text ?></a>
-                            <?php endif; ?>
-                            <img src="<?php echo $slide5_url ?>" class="slide_img"></div>
+                            <a class="slide_span" href="<?php echo $slide5_link ?>" target="_blank"><?php echo $slide5_text ?></a>
+                            <?php endif; ?>                            
+                        </div>
                         <?php endif; endif; endif;
                         endif; ?>
                     </div>

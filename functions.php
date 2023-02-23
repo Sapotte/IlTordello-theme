@@ -295,7 +295,7 @@ function iltordello_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_setting('slide2_link', array(
-        'default'=> '#',
+        'default'=> '',
         'transport' => 'refresh',
         'sanitize_callback'=>'esc_attr'
     ));
@@ -305,8 +305,8 @@ function iltordello_customize_register($wp_customize) {
         'section'=>'slider',
         'type'=>'url',
         'input_attrs' => array(
-            'placeholder' => "https://example.com",
-            'pattern'=>"https://.*"
+            'placeholder'=>'https://example.com',
+            'pattern'=>'https://.*'
           )
     ));
 
@@ -340,7 +340,7 @@ function iltordello_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_setting('slide3_link', array(
-        'default'=> '#',
+        'default'=> '',
         'transport' => 'refresh',
         'sanitize_callback'=>'esc_attr'
     ));
@@ -350,8 +350,8 @@ function iltordello_customize_register($wp_customize) {
         'section'=>'slider',
         'type'=>'url',
         'input_attrs' => array(
-            'placeholder' => "https://example.com",
-            'pattern'=>"https://.*"
+            'placeholder'=>'https://example.com',
+            'pattern'=>'https://.*'
           )
     ));
 
@@ -385,7 +385,7 @@ function iltordello_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_setting('slide4_link', array(
-        'default'=> '#',
+        'default'=> '',
         'transport' => 'refresh',
         'sanitize_callback'=>'esc_attr'
     ));
@@ -395,8 +395,8 @@ function iltordello_customize_register($wp_customize) {
         'section'=>'slider',
         'type'=>'url',
         'input_attrs' => array(
-            'placeholder' => "https://example.com",
-            'pattern'=>"https://.*"
+            'placeholder'=>'https://example.com',
+            'pattern'=>'https://.*'
           )
     ));
 
@@ -430,7 +430,7 @@ function iltordello_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_setting('slide5_link', array(
-        'default'=> '#',
+        'default'=> '',
         'transport' => 'refresh',
         'sanitize_callback'=>'esc_attr'
     ));
@@ -440,8 +440,8 @@ function iltordello_customize_register($wp_customize) {
         'section'=>'slider',
         'type'=>'url',
         'input_attrs' => array(
-            'placeholder' => "https://example.com",
-            'pattern'=>"https://.*"
+            'placeholder'=>'https://example.com',
+            'pattern'=>'https://.*' 
           )
     ));
 
